@@ -14,6 +14,8 @@ MainComponent::~MainComponent()
 void MainComponent::paint (juce::Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
+    
+    addAndMakeVisible(toggleButton);
     g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
 
     g.setFont (juce::Font (48.0f));
